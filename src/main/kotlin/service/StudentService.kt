@@ -17,12 +17,14 @@ class StudentService {
     }
 
     fun isSubscribed(studentId: String?): Boolean {
-        //TODO implement this method
-        return false
+        return students.containsKey(studentId)
     }
 
     fun showSummary() {
-        //TODO implement
+        for (key in students.keys) {
+            val students = students[key]
+            println(students)
+        }
     }
 
     fun enrollToCourse(studentId: String?, course: Course?) {

@@ -6,11 +6,11 @@ import java.util.HashMap
 import model.Student
 import java.util.ArrayList
 
-class CourseService {
+open class CourseService {
     private val courses: MutableMap<String, Course> = HashMap()
     private val enrolledStudents: MutableMap<String, MutableList<Student>> = HashMap()
     fun registerCourse(course: Course) {
-        courses[course.code] = course
+        courses[course.id] = course
     }
 
     fun getCourse(code: String): Course? {

@@ -1,10 +1,15 @@
 package service
 
+import org.junit.juniter.api.Test
+
 import org.junit.jupiter.api.Assertions.*
 
 internal class StudentServiceTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
+    //@org.junit.jupiter.api.Test
     fun isSubscribed() {
+        assertNotEquals
+
     }
 }
